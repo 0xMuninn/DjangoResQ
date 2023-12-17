@@ -47,4 +47,4 @@ def register(request):
 
 def lista_adoptantes(request):
     adoptantes = Adoptantes.objects.all()
-    return render(request, 'adopt.html')
+    return render(request, 'adopt.html', {"adoptantes" : adoptantes})
